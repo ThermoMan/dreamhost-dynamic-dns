@@ -17,7 +17,7 @@ Modify the config.php to suit your needs. At the very least:
 
 * Update the 'allowedDomains' configuration options to allow the domain(s) you want to be able update.
 * Change the 'password' to the password you want to use, or leave empty to disable.
-* Set 'defaults'=>'apiKey' value to the API key you [generate at Dreamhost](https://panel.dreamhost.com/index.cgi?tree=home.api). You probably wwant to limit this API key to only DNS related calls.
+* Set 'defaults'=>'apiKey' value to the API key you [generate at Dreamhost](https://panel.dreamhost.com/index.cgi?tree=home.api). You probably want to limit this API key to only DNS related calls.
 
 ## Usage
 
@@ -28,6 +28,10 @@ Once installed, you can update your DNS by visiting a URL like this (assuming yo
 For your Tomato-powered router, choose "Custom URL" and enter something like this:
 
 > http://www.example.com/dyndns/index.php?ip=@IP&domain=mydomain.com
+
+For using at home to fix the annoyances of ISP DHCP randomness:
+
+> http://www.example.com/dyndns/index.php?domain=mydomain.com&password=correcthorsebatterystaple
 
 ## Configuration
 
